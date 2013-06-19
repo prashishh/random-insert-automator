@@ -2,11 +2,11 @@
 
 Suppose you want to insert thousands dummy data to your table, how would you do it? Don't tell me you are going use the archaic method of inserting every individual row? 
 
-[Insert-random-automator][githublink] automates this process of inserting X number of rows into your table randomly. This project is an extension of [randomizer][randomizerlink] so it shares some common codes. The reason I did not combine the two is that both have different functionality.
+[Insert-random-automator][githublink] automates this process by inserting X number of rows into your table randomly. This project is an extension of [randomizer][randomizerlink] so it shares some common codes. Both have different purposes, so I did not combine the two.
 
-#### Try it
+### Try it
 
-__Define__ values that you want to insert, randomly
+__Define__
 ```php
     $values = array(
         'first_name' => array('Ram', 'Gopal', 'Hari', 'Ramesh'), 
@@ -23,7 +23,7 @@ __Initialize__
 
 __Automate Insertion__
 ```php
-    $obj->autoInsertion("<table name>", <value array>, <number of iteration>);
+    $obj->autoInsertion("<table name>", "<value array>", "<number of iteration>");
 ```
 `<number of iteration>` is the number of times you want to randomly insert records into your table.
 
